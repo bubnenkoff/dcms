@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DLang</title>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+  </head>
+  <body>
+    <div id="app">
+      <div class="MainContainer">
+          <div class="Header">
+            <div class="HeaderMenu">
+                <div class="HeaderBlock"><router-link to="/">General</router-link></div>
+                <div class="HeaderBlock"><router-link to="/FAQ">FAQ</router-link></div>
+                <div class="HeaderBlock"><router-link to="/Book">Book</router-link></div>
+            </div>
+            <div class="HeaderLoginBlock">Sign in</div>
+          </div>
+
+          <div class="Middle">
+                <router-view></router-view>     
+           </div>
+          <div class="footer">(c) DLANG 2017</div>
+
+      </div>
+
+          
+    </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
